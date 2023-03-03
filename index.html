@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>clima hoje</title>
+</head>
+<body>
+
+    <main id="container">
+        <header>
+            <h1>Clima Hoje</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="digite uma cidade...">
+                <button>
+                    <span #="iconePesquisa" class="material-symbols-outlined">
+                        search
+                    </span>
+                </button>
+            </div>
+        </header>
+        
+        <div class="content" style="display: none;">
+            <img src="" alt="Clima">
+            <span id="degrees">30° C</span>
+            <h2 id="place">Campinas, BR</h2>
+        </div>
+        <div class="extrainfo" style="display: none;">
+            <span id="wind"></span>
+            <span id="data-atual">Data: 2/3/2023</span>
+        </div>
+        <div class="color-mode">
+            <div class="light">
+                <label for="light-mode">light</label>
+                <input type="radio" id="light-mode" name="cor" checked>
+            </div>
+            <div class="dark">
+                <input type="radio" id="dark-mode" name="cor">
+                <label for="dark-mode">dark</label>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
